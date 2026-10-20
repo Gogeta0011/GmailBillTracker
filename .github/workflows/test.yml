@@ -11,4 +11,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r v2/requirements.txt
-      - run: cd v2 && pytest
+      - run: cd v2 && PYTHONPATH=. pytest
